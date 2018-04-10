@@ -13,6 +13,8 @@
 		B9641D90207C9EE500084BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9641D8F207C9EE500084BDA /* Assets.xcassets */; };
 		B9641D93207C9EE500084BDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9641D91207C9EE500084BDA /* LaunchScreen.storyboard */; };
 		B9641D96207C9EE500084BDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9641D95207C9EE500084BDA /* main.m */; };
+		B9641DA1207C9EF900084BDA /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B9641D9E207C9EF900084BDA /* GCDAsyncSocket.m */; };
+		B9641DA2207C9EF900084BDA /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B9641DA0207C9EF900084BDA /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		B9641D92207C9EE500084BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9641D94207C9EE500084BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9641D95207C9EE500084BDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9641D9D207C9EF900084BDA /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		B9641D9E207C9EF900084BDA /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		B9641D9F207C9EF900084BDA /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		B9641DA0207C9EF900084BDA /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		B9641D85207C9EE500084BDA /* SocketTest */ = {
 			isa = PBXGroup;
 			children = (
+				B9641D9C207C9EF900084BDA /* GCD */,
 				B9641D86207C9EE500084BDA /* AppDelegate.h */,
 				B9641D87207C9EE500084BDA /* AppDelegate.m */,
 				B9641D89207C9EE500084BDA /* ViewController.h */,
@@ -69,6 +76,17 @@
 				B9641D95207C9EE500084BDA /* main.m */,
 			);
 			path = SocketTest;
+			sourceTree = "<group>";
+		};
+		B9641D9C207C9EF900084BDA /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				B9641D9D207C9EF900084BDA /* GCDAsyncSocket.h */,
+				B9641D9E207C9EF900084BDA /* GCDAsyncSocket.m */,
+				B9641D9F207C9EF900084BDA /* GCDAsyncUdpSocket.h */,
+				B9641DA0207C9EF900084BDA /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9641DA1207C9EF900084BDA /* GCDAsyncSocket.m in Sources */,
+				B9641DA2207C9EF900084BDA /* GCDAsyncUdpSocket.m in Sources */,
 				B9641D8B207C9EE500084BDA /* ViewController.m in Sources */,
 				B9641D96207C9EE500084BDA /* main.m in Sources */,
 				B9641D88207C9EE500084BDA /* AppDelegate.m in Sources */,
